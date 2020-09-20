@@ -1,0 +1,3 @@
+curl -X POST -d "{\"name\": \"Me\", \"price\": \"$400\"}" http://localhost:8080/new
+curl -X POST -d "{\"name\": \"Me\"}" http://localhost:8080/new
+curl -X POST -d "{\"name\": \"Me\", \"price\": \"$400\"}" http://localhost:8080/new

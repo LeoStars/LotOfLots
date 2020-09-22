@@ -1,3 +1,8 @@
 curl -X POST -d "{\"name\": \"Me\", \"price\": \"$400\"}" http://localhost:8080/new
 curl -X POST -d "{\"name\": \"Me\"}" http://localhost:8080/new
 curl -X POST -d "{\"name\": \"Me\", \"price\": \"$400\"}" http://localhost:8080/new
+curl -X POST -d "{\"id\": 1}" http://localhost:8080/close
+curl -X POST -d "{\"id\": 2, \"price\": \"$400\", \"name\": \"Kolya\"}" http://localhost:8080/update
+curl -X POST -d "{\"id\": 3, \"price\": \"400\", \"name\": \"Long\"}" http://localhost:8080/update
+curl -X POST -d "{\"id\": 2, \"price\": \"$600\", \"name\": \"Anton\"}" http://localhost:8080/update
+curl -X POST -d "{\"id\": 2}" http://localhost:8080/history
